@@ -1,3 +1,47 @@
 #map {
     height: 80vh;
 }
+
+#map-container {
+    position: relative;
+}
+
+#search-container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    
+    display:none;
+
+}
+
+#search-results {
+    max-height: 300px;
+    overflow-y: scroll;
+
+}
+
+#toggleSearchBtn {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    z-index: 1000;
+}
+
+@media screen and (min-width: 767px ) {
+    #search-container {
+        display: block;
+        min-width: 300px;
+        max-width: 300px;
+        top: 20px;
+    }
+
+    #toggleSearchBtn {
+        display: none;
+    }
+}
