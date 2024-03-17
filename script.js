@@ -3,12 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchLayer = L.layerGroup();
     searchLayer.addTo(map);
     
-    let GardensbythebayMarker = L.marker([1.2845886,103.8646566]);;
-    GardensbythebayMarker.addTo(map);
-    
+    L.marker([1.2845886,103.8646566]).addTo(map)
+    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+    .openPopup()
+   
     let SingaporebotanicgardensMarker = L.marker([1.3157133526629585, 103.81606665227358]);;
     SingaporebotanicgardensMarker.addTo(map);
-
+   
     let NationalorchidgardenMarker = L.marker([1.3117707874872062, 103.8147790725891]);;
     NationalorchidgardenMarker.addTo(map);
 
