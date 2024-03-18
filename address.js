@@ -11,10 +11,10 @@ const address = {
     singaporeflyer:"Singapore Flyer, 30 Raffles Ave., Singapore 039803",
     singaporediscoverycentre:"Singapore Discovery Centre, 510 Upper Jurong Rd, Singapore 638365",
     supertreegrove:"Supertree Grove, 18 Marina Gardens Dr, Singapore 018953",
-    sandsskyparkobservataiondeck:"SkyPark Observation Deck, 10 Bayfront Ave, Singapore 018956",
+    sandsskyparkobservationdeck:"Sands SkyPark Observation Deck, 10 Bayfront Ave, Singapore 018956",
     chinatown:"Chinatown,singapore",
     orchardroad:"Orchard road,singapore",
-    buddhatoothrelictempleandmuseum:"Buddha Tooth Relic Temple and Museum,, 288 South Bridge Rd, Singapore 058840",
+    buddhatoothrelictempleandmuseum:"Buddha Tooth Relic Temple and Museum, 288 South Bridge Rd, Singapore 058840",
     merlionpark:"Merlion Park, 1 Fullerton Rd, Singapore 049213",
     waterfrontpromenade:"Waterfront Promenade, 1 Esplanade Dr, #01-K5, Singapore 038981",
     flowerdome:"Flower Dome, 18 Marina Gardens Dr, Singapore 018953",
@@ -25,7 +25,7 @@ const address = {
     clarquequay:"Clarke Quay, 3 River Valley Rd, Singapore 179024",
     nightsafari:"Night Safari, 80 Mandai Lake Rd, Singapore 729826",
     maxwellfoodcentre:"Maxwell Food Centre, 1 Kadayanallur St, Singapore 069184",
-    srithendayuthapanitemple:" Sri Thendayuthapani Temple, 15 Tank Rd, Singapore 238065"
+    srithendayudhabaniswamitemple:"Sri Thendayudhabani swami Temple, 15 Tank Rd, Singapore 238065",
 
 
 
