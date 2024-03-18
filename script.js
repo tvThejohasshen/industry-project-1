@@ -33,6 +33,13 @@ L.marker([1.2868055885099114, 103.85443895552905], { icon: greenIcon }).addTo(ma
 L.marker([1.289432980298925, 103.85529121560053], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Waterfront Promenade.");
 L.marker([1.2845578803730962, 103.86502848084663], { icon: greenIcon }).addTo(map).bindPopup("Welcome to FLower Dome.");
 L.marker([1.2967968909521277, 103.84847573941556], { icon: greenIcon }).addTo(map).bindPopup("Welcome to National Museum of Singapore.");
+L.marker([1.3597258939468875, 103.85220438043015], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Mass Rapid Transit.");
+L.marker([1.3606167491250998, 103.99043853094469], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Jewel Changi Airport.");
+L.marker([1.271326641380478, 103.81963483981161], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore cable Car.");
+L.marker([1.2908153164072156, 103.8463385518567], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Clarque Quay.");
+L.marker([1.402302409754913, 103.78796951121687], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Night safari.");
+L.marker([1.2807436926638787, 103.8448099090604], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Maxwell Food Centre.");
+L.marker([1.2945666562975833, 103.8431739529228], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Sri Thendayuthapani swami Temple.");
 
 // Define LeafIcon
 var LeafIcon = L.Icon.extend({
@@ -68,9 +75,13 @@ L.marker([1.2868055885099114, 103.85443895552905], { icon: greenLeafIcon }).addT
 L.marker([1.289432980298925, 103.85529121560053], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Water front Promenade</b><br><img src="./Four square/15.Waterfront Promenade.jpg" style="width:300px; height:auto;">${address.waterfrontpromenade}`);
 L.marker([1.2845578803730962, 103.86502848084663], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Flower Dome</b><br><img src="./Four square/16.Flower Dome.jpg" style="width:300px; height:auto;">${address.flowerdome}`);
 L.marker([1.2967968909521277, 103.84847573941556], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to National Museum of Singapore</b><br><img src="./Four square/17.National Museum of Singapore.jpg" style="width:300px; height:auto;">${address.nationalmuseumofsingapore}`);
-
-
-
+L.marker([1.3597258939468875, 103.85220438043015], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Singapore Mass Rapid Transit</b><br><img src="./Four square/18.Singapore Mass Rapid Transit.jpg" style="width:300px; height:auto;">${address.singaporemassrapidtransit}`);
+L.marker([1.3606167491250998, 103.99043853094469], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Jewel Changi Airport</b><br><img src="./Four square/19.Jewel Changi Airport.jpg" style="width:300px; height:auto;">${address.jewelchangiairport}`);
+L.marker([1.271326641380478, 103.81963483981161], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Singapore Cable Car</b><br><img src="./Four square/20.Singapore cable car.jpg" style="width:300px; height:auto;">${address.singaporecablecar}`);
+L.marker([1.2908153164072156, 103.8463385518567], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Clarque Quay</b><br><img src="./Four square/21.Clarque Quay.jpg" style="width:300px; height:auto;">${address.clarquequay}`);
+L.marker([1.402302409754913, 103.78796951121687], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Night Safari</b><br><img src="./Four square/22.Night safari.jpg" style="width:300px; height:auto;">${address.nightsafari}`);
+L.marker([1.2807436926638787, 103.8448099090604], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Maxwell Food centre</b><br><img src="./Four square/23.maxwell food centre.jpg" style="width:300px; height:auto;">${address.maxwellfoodcentre}`);
+L.marker([1.2945666562975833, 103.8431739529228], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to 24.Sri Thendayudhabani Swami Temple</b><br><img src="./Four square/24.Sri Thendayudhabani Swami Temple.jpg" style="width:300px; height:auto;">${address. srithendayuthapaniswamitemple}`);
 
     document.querySelector("#searchBtn").addEventListener("click", async function () {
         const searchTerms = document.querySelector("#searchTerms").value;
