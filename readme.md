@@ -10,6 +10,8 @@ index.html
 - leaflet 
 - marker cluster default css
 
+
+
 Top 15 Attractions of Singapore :
 1.	Gardens by the bay
     Gardens by the Bay, 18 Marina Gardens Dr, Singapore 018953
