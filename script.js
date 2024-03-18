@@ -25,6 +25,14 @@ L.marker([1.2882675480352717, 103.86613366212326], { icon: greenIcon }).addTo(ma
 L.marker([1.2890897444659277, 103.86291645470041], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Flyer.");
 L.marker([1.3335404433692934, 103.67842101649347], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Discovery Centre.");
 L.marker([1.2822412783186132, 103.86380477057844], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Supertree Grove.");
+L.marker([1.2853590094093568, 103.86121353301888], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Sands Skypark Observataion Deck.");
+L.marker([1.2814621285101353, 103.844720052923], { icon: greenIcon }).addTo(map).bindPopup("Welcome to chinatown.");
+L.marker([1.3048836453075898, 103.832083861968], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Orchard road.");
+L.marker([1.282920884840201, 103.84420506879974], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Buddha Tooth Relic Temple and Museum.");
+L.marker([1.2868055885099114, 103.85443895552905], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Merlion park.");
+L.marker([1.289432980298925, 103.85529121560053], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Waterfront Promenade.");
+L.marker([1.2845578803730962, 103.86502848084663], { icon: greenIcon }).addTo(map).bindPopup("Welcome to FLower Dome.");
+L.marker([1.2967968909521277, 103.84847573941556], { icon: greenIcon }).addTo(map).bindPopup("Welcome to National Museum of Singapore.");
 
 // Define LeafIcon
 var LeafIcon = L.Icon.extend({
@@ -53,6 +61,14 @@ L.marker([1.2882675480352717, 103.86613366212326], { icon: greenLeafIcon }).addT
 L.marker([1.2890897444659277, 103.86291645470041], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Singapore Flyer</b><br><img src="./Four square/7.Singapore Flyer.jpg" style="width:300px; height:auto;">${address.singaporeflyer}`);
 L.marker([1.3335404433692934, 103.67842101649347], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Singapore Discovery Centre</b><br><img src="./Four square/8.singapore discovery centre.jpg" style="width:300px; height:auto;">${address.singaporediscoverycentre}`);
 L.marker([1.2822412783186132, 103.86380477057844], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Supertree Grove</b><br><img src="./Four square/9.Supertree Grove.jpg" style="width:300px; height:auto;">${address.supertreegrove}`);
+L.marker([1.2853590094093568, 103.86121353301888], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to sandsskyparkobservationdeck</b><br><img src="./Four square/10.Sands Skypark Observataion Deck.jpg" style="width:300px; height:auto;">${address.sandsskyparkobservationdeck}`);
+L.marker([1.3048836453075898, 103.832083861968], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to orchardroad</b><br><img src="./Four square/11.chinatown.jpeg" style="width:300px; height:auto;">${address.chinatowndeck}`);
+L.marker([1.282920884840201, 103.84420506879974], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to BuddhaToothRelicTempleandMuseum</b><br><img src="./Four square/13.Buddha Tooth Relic Temple and Museum.jpg" style="width:300px; height:auto;">${address.BuddhaToothRelicTempleandMuseum}`);
+L.marker([1.2868055885099114, 103.85443895552905], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Merlion Park</b><br><img src="./Four square/14.Merlion Park.jpg" style="width:300px; height:auto;">${address.merlionpark}`);
+L.marker([1.289432980298925, 103.85529121560053], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Water front Promenade</b><br><img src="./Four square/15.Waterfront Promenade.jpg" style="width:300px; height:auto;">${address.waterfrontpromenade}`);
+L.marker([1.2845578803730962, 103.86502848084663], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Flower Dome</b><br><img src="./Four square/16.Flower Dome.jpg" style="width:300px; height:auto;">${address.flowerdome}`);
+L.marker([1.2967968909521277, 103.84847573941556], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to National Museum of Singapore</b><br><img src="./Four square/17.National Museum of Singapore.jpg" style="width:300px; height:auto;">${address.nationalmuseumofsingapore}`);
+
 
 
 
