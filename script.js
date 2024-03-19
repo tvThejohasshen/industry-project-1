@@ -13,33 +13,84 @@ var greenIcon = L.icon({
     iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
     shadowAnchor: [4, 62], // the same for the shadow
     popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
+});// Create a MarkerClusterGroup
+let markers = L.markerClusterGroup();
 
-// Create markers using greenIcon
-L.marker([1.2845886, 103.8646566], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Gardens by the Bay.");
-L.marker([1.3157133526629585, 103.81606665227358], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Botanic Gardens.");
-L.marker([1.3117707874872062, 103.8147790725891], { icon: greenIcon }).addTo(map).bindPopup("Welcome to National Orchid Garden.");
-L.marker([1.2839574616274565, 103.86580837638425], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Cloud Forest.");
-L.marker([1.4043617283957168, 103.7924327069517], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Zoo.");
-L.marker([1.2882675480352717, 103.86613366212326], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Marina Bay.");
-L.marker([1.2890897444659277, 103.86291645470041], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Flyer.");
-L.marker([1.3335404433692934, 103.67842101649347], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Discovery Centre.");
-L.marker([1.2822412783186132, 103.86380477057844], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Supertree Grove.");
-L.marker([1.2853590094093568, 103.86121353301888], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Sands Skypark Observation Deck.");
-L.marker([1.2814621285101353, 103.844720052923], { icon: greenIcon }).addTo(map).bindPopup("Welcome to chinatown.");
-L.marker([1.3048836453075898, 103.832083861968], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Orchard road.");
-L.marker([1.282920884840201, 103.84420506879974], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Buddha Tooth Relic Temple and Museum.");
-L.marker([1.2868055885099114, 103.85443895552905], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Merlion park.");
-L.marker([1.289432980298925, 103.85529121560053], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Waterfront Promenade.");
-L.marker([1.2845578803730962, 103.86502848084663], { icon: greenIcon }).addTo(map).bindPopup("Welcome to FLower Dome.");
-L.marker([1.2967968909521277, 103.84847573941556], { icon: greenIcon }).addTo(map).bindPopup("Welcome to National Museum of Singapore.");
-L.marker([1.3597258939468875, 103.85220438043015], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore Mass Rapid Transit.");
-L.marker([1.3606167491250998, 103.99043853094469], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Jewel Changi Airport.");
-L.marker([1.271326641380478, 103.81963483981161], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Singapore cable Car.");
-L.marker([1.2908153164072156, 103.8463385518567], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Clarque Quay.");
-L.marker([1.402302409754913, 103.78796951121687], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Night safari.");
-L.marker([1.2807436926638787, 103.8448099090604], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Maxwell Food Centre.");
-L.marker([1.2945666562975833, 103.8431739529228], { icon: greenIcon }).addTo(map).bindPopup("Welcome to Sri Thendayuthapani swami Temple.");
+// Create markers and add them to the cluster group
+let leaves = L.marker([1.2845886, 103.8646566], { icon: greenIcon }).addTo(map).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg" style="width:300px; height:auto;">${address.gardensByTheBay}`);
+markers.addLayer(leaves);
+
+leaves = L.marker([1.3157133526629585, 103.81606665227358], { icon: greenIcon }).bindPopup("Welcome to Singapore Botanic Gardens.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.3117707874872062, 103.8147790725891], { icon: greenIcon }).bindPopup("Welcome to National Orchid Garden.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2839574616274565, 103.86580837638425], { icon: greenIcon }).bindPopup("Welcome to Cloud Forest.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.4043617283957168, 103.7924327069517], { icon: greenIcon }).bindPopup("Welcome to Singapore Zoo.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2882675480352717, 103.86613366212326], { icon: greenIcon }).bindPopup("Welcome to Marina Bay.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2890897444659277, 103.86291645470041], { icon: greenIcon }).bindPopup("Welcome to Singapore Flyer.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.3335404433692934, 103.67842101649347], { icon: greenIcon }).bindPopup("Welcome to Singapore Discovery Centre.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2822412783186132, 103.86380477057844], { icon: greenIcon }).bindPopup("Welcome to Supertree Grove.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2853590094093568, 103.86121353301888], { icon: greenIcon }).bindPopup("Welcome to Sands Skypark Observation Deck.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2814621285101353, 103.844720052923], { icon: greenIcon }).bindPopup("Welcome to Chinatown.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.3048836453075898, 103.832083861968], { icon: greenIcon }).bindPopup("Welcome to Orchard Road.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.282920884840201, 103.84420506879974], { icon: greenIcon }).bindPopup("Welcome to Buddha Tooth Relic Temple and Museum.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2868055885099114, 103.85443895552905], { icon: greenIcon }).bindPopup("Welcome to Merlion Park.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.289432980298925, 103.85529121560053], { icon: greenIcon }).bindPopup("Welcome to Waterfront Promenade.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2845578803730962, 103.86502848084663], { icon: greenIcon }).bindPopup("Welcome to Flower Dome.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2967968909521277, 103.84847573941556], { icon: greenIcon }).bindPopup("Welcome to National Museum of Singapore.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.3597258939468875, 103.85220438043015], { icon: greenIcon }).bindPopup("Welcome to Singapore Mass Rapid Transit.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.3606167491250998, 103.99043853094469], { icon: greenIcon }).bindPopup("Welcome to Jewel Changi Airport.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.271326641380478, 103.81963483981161], { icon: greenIcon }).bindPopup("Welcome to Singapore Cable Car.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2908153164072156, 103.8463385518567], { icon: greenIcon }).bindPopup("Welcome to Clarke Quay.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.402302409754913, 103.78796951121687], { icon: greenIcon }).bindPopup("Welcome to Night Safari.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2807436926638787, 103.8448099090604], { icon: greenIcon }).bindPopup("Welcome to Maxwell Food Centre.");
+markers.addLayer(leaves);
+
+leaves = L.marker([1.2945666562975833, 103.8431739529228], { icon: greenIcon }).bindPopup("Welcome to Sri Thendayuthapani Swami Temple.");
+markers.addLayer(leaves);
+
+// Add the marker cluster group to the map
+map.addLayer(markers);
 
 // Define LeafIcon
 var LeafIcon = L.Icon.extend({
@@ -59,7 +110,7 @@ var greenLeafIcon = new LeafIcon({ iconUrl: 'leaf-green.png' });
 const hh = "Hello";
 
 // Bind popups with HTML content to the markers
-L.marker([1.2845886, 103.8646566], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg" style="width:300px; height:auto;">${address.gardensByTheBay}`);
+L.marker([1.2845886, 103.8646566], { icon: greenLeafIcon })
 L.marker([1.3157133526629585, 103.81606665227358], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Singapore Botanic Gardens</b><br><img src="./Four square/2. Singapore Botanic Gardens.jpg" style="width:300px; height:auto;">${address.singaporebotanicgardens}`);
 L.marker([1.3117707874872062, 103.8147790725891], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to National Orchid Garden</b><br><img src="./Four square/3.National Orchid Garden.jpg" style="width:300px; height:auto;">${address.nationalorchidgarden}`);
 L.marker([1.2839574616274565, 103.86580837638425], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Cloud Forest</b><br><img src="./Four square/4.cloud forest.jpg" style="width:300px; height:auto;">${address.cloudforest}`);
