@@ -13,8 +13,10 @@ var greenIcon = L.icon({
     iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
     shadowAnchor: [4, 62], // the same for the shadow
     popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
-});// Create a MarkerClusterGroup
+});
+// Create a MarkerClusterGroup
 let markers = L.markerClusterGroup();
+
 
 // Create markers and add them to the cluster group
 let leaves = L.marker([1.2845886, 103.8646566], { icon: greenIcon }).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg" style="width:300px; height:auto;">${address.gardensByTheBay}`);
@@ -89,6 +91,7 @@ markers.addLayer(leaves);
 leaves = L.marker([1.2945666562975833, 103.8431739529228], { icon: greenIcon }).bindPopup(`<b>Welcome to Sri ThendayudhabaniSwami Temple</b><br><img src="./Four square/24.Sri ThendayudhabaniSwami Temple.jpg" style="width:300px; height:auto;">${address. srithendayudhabaniswamitemple}`);
 markers.addLayer(leaves);
 
+
 // Add the marker cluster group to the map
 map.addLayer(markers);
 
@@ -110,7 +113,7 @@ var greenLeafIcon = new LeafIcon({ iconUrl: 'leaf-green.png' });
 const hh = "Hello";
 
 // Bind popups with HTML content to the markers
-L.marker([1.2845886, 103.8646566], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg" style="width:300px; height:auto;">${address.gardensByTheBay}`);
+L.marker([1.2845886, 103.8646566], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg"alt="Image of Gardens by the Bay" style="width:300px; height:auto;">${address.gardensByTheBay}`);
 L.marker([1.3157133526629585, 103.81606665227358], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Singapore Botanic Gardens</b><br><img src="./Four square/2. Singapore Botanic Gardens.jpg" style="width:300px; height:auto;">${address.singaporebotanicgardens}`);
 L.marker([1.3117707874872062, 103.8147790725891], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to National Orchid Garden</b><br><img src="./Four square/3.National Orchid Garden.jpg" style="width:300px; height:auto;">${address.nationalorchidgarden}`);
 L.marker([1.2839574616274565, 103.86580837638425], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Cloud Forest</b><br><img src="./Four square/4.cloud forest.jpg" style="width:300px; height:auto;">${address.cloudforest}`);
@@ -135,7 +138,8 @@ L.marker([1.402302409754913, 103.78796951121687], { icon: greenLeafIcon }).addTo
 L.marker([1.2807436926638787, 103.8448099090604], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Maxwell Food centre</b><br><img src="./Four square/23.maxwell food centre.jpg" style="width:300px; height:auto;">${address.maxwellfoodcentre}`);
 L.marker([1.2945666562975833, 103.8431739529228], { icon: greenLeafIcon }).addTo(map).bindPopup(`<b>Welcome to Sri ThendayudhabaniSwami Temple</b><br><img src="./Four square/24.Sri ThendayudhabaniSwami Temple.jpg" style="width:300px; height:auto;">${address. srithendayudhabaniswamitemple}`);
 
-    document.querySelector("#searchBtn").addEventListener("click", async function () {
+
+        document.querySelector("#searchBtn").addEventListener("click", async function () {
         const searchTerms = document.querySelector("#searchTerms").value;
         
         // find the lat lng of the center of the map
@@ -164,7 +168,7 @@ L.marker([1.2945666562975833, 103.8431739529228], { icon: greenLeafIcon }).addTo
 
 
 
-        
+    // Adding event listeners to spans using a loop    
     let spans = document.getElementsByTagName("span");
 
     for (let i = 0; i < spans.length; i++) {
@@ -173,3 +177,48 @@ L.marker([1.2945666562975833, 103.8431739529228], { icon: greenLeafIcon }).addTo
         });
     }
 })
+// Added a nested loop
+for (let i = 0; i < 5; i++) {
+    console.log(`Outer loop iteration ${i}`);
+    for (let j = 0; j < 3; j++) {
+        console.log(`Inner loop iteration ${j}`);
+        if (j === 1) {
+            console.log("Continue inner loop");
+            continue;
+        }
+        if (i === 3) {
+            console.log("Break outer loop");
+            break;
+        }
+    }
+}
+
+ // Minimal example of using map and reduce with for loops
+ const numbers = [1, 2, 3, 4, 5];
+
+ // Using map to square each number
+ const squaredNumbers = [];
+ for (let i = 0; i < numbers.length; i++) {
+     squaredNumbers.push(numbers[i] * numbers[i]);
+ }
+ console.log("Squared numbers:", squaredNumbers);
+
+ // Using reduce to calculate the sum
+ let sum = 0;
+ for (let i = 0; i < numbers.length; i++) {
+     sum += numbers[i];
+ }
+ console.log("Sum:", sum);
+
+ // Loop over the marker data and create markers using forEach
+markerData.forEach(data => {
+    const { coordinates, imgSrc, address } = data;
+    let leaf = L.marker(coordinates, { icon: greenIcon }).bindPopup(`<b>Welcome</b><br><img src="${imgSrc}" alt="Image" style="width:300px; height:auto;">${address}`);
+    markers.addLayer(leaf);
+});
+
+const markerData = [
+    { coordinates: [1.2845886, 103.8646566], imgSrc: './Four square/1. Garden by the bay.jpg', address: address.gardensByTheBay },
+        { coordinates: [1.3157133526629585, 103.81606665227358], imgSrc: './Four square/3.National Orchid Garden.jpg', address: address.nationalorchidgarden },
+       
+    ];
