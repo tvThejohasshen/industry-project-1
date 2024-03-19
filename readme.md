@@ -12,7 +12,7 @@ index.html
 
 
 
-Top 15 Attractions of Singapore :
+Top 24 Attractions of Singapore :
 1.	Gardens by the bay
     Gardens by the Bay, 18 Marina Gardens Dr, Singapore 018953
 2.	Singapore botanic gardens

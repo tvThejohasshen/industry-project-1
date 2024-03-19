@@ -20,7 +20,7 @@ let markers = L.markerClusterGroup();
 let leaves = L.marker([1.2845886, 103.8646566], { icon: greenIcon }).addTo(map).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg" style="width:300px; height:auto;">${address.gardensByTheBay}`);
 markers.addLayer(leaves);
 
-leaves = L.marker([1.3157133526629585, 103.81606665227358], { icon: greenIcon }).bindPopup("Welcome to Singapore Botanic Gardens.");
+leaves = L.marker([1.3157133526629585, 103.81606665227358], { icon: greenIcon }).bindPopup(`<b>Welcome to National Orchid Garden</b><br><img src="./Four square/3.National Orchid Garden.jpg" style="width:300px; height:auto;">${address.nationalorchidgarden}`);
 markers.addLayer(leaves);
 
 leaves = L.marker([1.3117707874872062, 103.8147790725891], { icon: greenIcon }).bindPopup("Welcome to National Orchid Garden.");
