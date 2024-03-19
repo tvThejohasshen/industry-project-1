@@ -17,22 +17,30 @@
 <body>
 
     <div class="container">
-        <div id="map-container">
-            <button id="toggleSearchBtn">Search</button>
-            <div id="map"></div>
-            <div id="search-container">
-                <input type="text" id="searchTerms" class="form-control mb-3"/>
-                <button id="searchBtn" class="btn btn-primary">Search</button>
-                <div id="search-results">
+        <main>
+            <header>
+                <h1><b>Singapore Explore Map</b></h1>
+                <button id="toggleSearchBtn" class="btn btn-primary d-lg-none">Search</button>
+            </header>
 
-
+            <section id="map-container" class="row">
+                <div class="col-lg-12">
+                    <div id="map"></div>
                 </div>
-           
-           
-            </div>
-        </div>
-    </div>
+                <div class="col-lg-4 d-lg-flex justify-content-center">
+                    <div id="search-container" class="search-container">
+                        <input type="text" id="searchTerms" class="form-control mb-3"/>
+                        <button id="searchBtn" class="btn btn-primary">Search</button>
+                        <div id="search-results"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
+        <footer>
+            <P align="right"><b>&copy; 2024 Singapore Explore Map @ All rights reserved.</b></p>
+        </footer>
+    </div>
     
     <!-- axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
