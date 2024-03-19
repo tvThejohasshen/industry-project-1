@@ -90,7 +90,7 @@ L.marker([1.2945666562975833, 103.8431739529228], { icon: greenLeafIcon }).addTo
         // find the lat lng of the center of the map
         const centerPoint = map.getBounds().getCenter();
         const data = await search(centerPoint.lat, centerPoint.lng, searchTerms);
-
+        console.log(data);
         // adding markers to the map for the search results
         addMarkersToMap(data, searchLayer, map);
 
@@ -111,6 +111,14 @@ L.marker([1.2945666562975833, 103.8431739529228], { icon: greenLeafIcon }).addTo
       
     })
 
-    
 
-});
+
+        
+    let spans = document.getElementsByTagName("span");
+
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].addEventListener("click", function () {
+            document.getElementById("searchTerms").value = spans[i].innerHTML;
+        });
+    }
+})
