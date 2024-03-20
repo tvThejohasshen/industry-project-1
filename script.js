@@ -18,6 +18,7 @@ var greenIcon = L.icon({
 let markers = L.markerClusterGroup();
 
 
+
 // Create markers and add them to the cluster group
 let leaves = L.marker([1.2845886, 103.8646566], { icon: greenIcon }).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg" style="width:300px; height:auto;">${address.gardensByTheBay}`);
 markers.addLayer(leaves);
@@ -213,12 +214,12 @@ for (let i = 0; i < 5; i++) {
  // Loop over the marker data and create markers using forEach
 markerData.forEach(data => {
     const { coordinates, imgSrc, address } = data;
-    let leaf = L.marker(coordinates, { icon: greenIcon }).bindPopup(`<b>Welcome</b><br><img src="${imgSrc}" alt="Image" style="width:300px; height:auto;">${address}`);
+    let leaf = L.marker(coordinates, { icon: greenIcon }).bindPopup(`<b>Welcome to Gardens by the Bay</b><br><img src="./Four square/1. Garden by the bay.jpg"alt="Image of Gardens by the Bay" style="width:300px; height:auto;">${address.gardensByTheBay}`);
     markers.addLayer(leaf);
 });
 
 const markerData = [
     { coordinates: [1.2845886, 103.8646566], imgSrc: './Four square/1. Garden by the bay.jpg', address: address.gardensByTheBay },
-        { coordinates: [1.3157133526629585, 103.81606665227358], imgSrc: './Four square/3.National Orchid Garden.jpg', address: address.nationalorchidgarden },
+    { coordinates: [1.3157133526629585, 103.81606665227358], imgSrc: './Four square/3.National Orchid Garden.jpg', address: address.nationalorchidgarden },
        
     ];
